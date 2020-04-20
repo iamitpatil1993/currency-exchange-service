@@ -1,0 +1,1 @@
+Microservice which provides APIs for mapping between different currencies. Connects to spring-cloud-config-server for external configs and registers to Eureka Server for service registry and discovery
