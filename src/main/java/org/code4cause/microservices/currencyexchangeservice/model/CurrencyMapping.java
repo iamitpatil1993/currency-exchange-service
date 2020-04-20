@@ -8,6 +8,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -53,6 +54,9 @@ public class CurrencyMapping {
 	@Basic
 	@Column(name = "updated_on")
 	private Instant updatedOn;
+	
+	@Transient
+	private int port;
 	
 	
 
